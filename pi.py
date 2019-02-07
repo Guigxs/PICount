@@ -86,7 +86,7 @@ class piApp(App):
         for i in self.contenu:
             self.affiche += str(i) 
 
-        with open ("PI/pi.txt", "r") as file:
+        with open ("pi.txt", "r") as file:
             self.pi = file.read()
 
         self.label.text = self.affiche
