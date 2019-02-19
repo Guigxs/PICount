@@ -82,11 +82,11 @@ class piApp(App):
 
     def check(self):
         print("Contenu:", self.contenu)
-        self.affiche = ""  #AFFICHE LA LISTE DANS LE LABEL 
+        self.affiche = ""  #AFFICHE LA LISTE DANS LE LABEL  
         for i in self.contenu:
             self.affiche += str(i) 
 
-        with open ("pi.txt", "r") as file:
+        with open ("numpi.txt", "r") as file:
             self.pi = file.read()
 
         self.label.text = self.affiche
