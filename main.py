@@ -103,5 +103,5 @@ class piApp(App):
             print("Chiffre faux")
             self.label.color = [1, 0, 0, 1]
 
-
-piApp().run()
+if __name__ == '__main__':
+    piApp().run()
